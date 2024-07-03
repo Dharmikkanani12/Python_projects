@@ -1,4 +1,13 @@
 #Description: This project is to encrypt and decrypt the message but you also need art.py file to run this file so, copy paste of that file to demonstrate my project."""
+import os
+import platform
+def clear_console():
+    # Clear the console based on the operating system
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def caesar(start_text, shift_amount, cipher_direction):
@@ -40,4 +49,7 @@ while not should_end:
   if restart == "no":
     should_end = True
     print("Goodbye")
+    clear_console()  
+  
+     
 
