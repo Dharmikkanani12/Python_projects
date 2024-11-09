@@ -18,16 +18,7 @@ def projects():
             "description": "A web app that fetches weather data and shows forecasts.",
             "url": "https://github.com/yourusername/weather-dashboard"
         },
-        {
-            "name": "IoT Home Automation",
-            "description": "An IoT-based home automation system that allows remote control of appliances.",
-            "url": "https://github.com/yourusername/iot-home-automation"
-        },
-        {
-            "name": "Machine Learning Model Deployment",
-            "description": "A simple sentiment analysis model deployed as a REST API using Flask.",
-            "url": "https://github.com/yourusername/ml-model-deployment"
-        }
+        # Add more projects as needed
     ]
     return render_template('projects.html', projects=projects)
 

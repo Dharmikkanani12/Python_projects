@@ -4,23 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dharmik Kanani's Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Vendor CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="{{ url_for('static', filename='css/styles.css') }}?v=1.2" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Dharmik Kanani's Portfolio</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About Me</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact</a>
-        </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <h1><a href="/">Dharmik Kanani</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
+
+    <!-- Main content -->
+    <main id="main">
         {% block content %}{% endblock %}
     </main>
-    <footer>
-        <p>&copy; 2024 Dharmik Kanani</p>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2024 Dharmik Kanani</p>
+        </div>
     </footer>
+
+    <!-- Vendor JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 </body>
 </html>
