@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+header, footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.intro, .about, .projects, .contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.project {
+    margin: 10px 0;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+}
+
