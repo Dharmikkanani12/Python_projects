@@ -1,0 +1,3 @@
+# requirements.txt
+turtle==0.0.1
+tkinter==8.6
